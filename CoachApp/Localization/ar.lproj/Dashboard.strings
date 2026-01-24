@@ -1,0 +1,20 @@
+/* Dashboard Screen - Arabic */
+"Dashboard" = "لوحة التحكم";
+"Total Subscribers" = "إجمالي المشتركين";
+"Training Courses" = "دورات التدريب";
+"Total Workouts" = "إجمالي التمارين";
+"Active Goals" = "الأهداف النشطة";
+"Recent Activity" = "النشاط الأخير";
+"No Recent Activity" = "لا يوجد نشاط حديث";
+"Activity will appear here as you add workouts and attendance records." = "سيظهر النشاط هنا عند إضافة التمارين وسجلات الحضور.";
+"Recent Workouts" = "التمارين الأخيرة";
+"Recent Attendance" = "الحضور الأخير";
+"Quick Stats" = "إحصائيات سريعة";
+"Total Attendance Records" = "إجمالي سجلات الحضور";
+"Completed Goals" = "الأهداف المكتملة";
+"Pending Goals" = "الأهداف المعلقة";
+"Expired Subscriptions" = "الاشتراكات المنتهية";
+"Workout" = "تمرين";
+"exercises" = "تمارين";
+"Gym Visit" = "زيارة الصالة";
+

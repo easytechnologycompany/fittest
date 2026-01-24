@@ -1,0 +1,23 @@
+/* Settings Screen */
+"Settings" = "Settings";
+"Appearance" = "Appearance";
+"Light" = "Light";
+"Dark" = "Dark";
+"System" = "System";
+"App Information" = "App Information";
+"Data Management" = "Data Management";
+"Delete All Data" = "Delete All Data";
+"About" = "About";
+"Coach Analytics" = "Coach Analytics";
+"Gym Management" = "Gym Management";
+"Track and manage your gym subscribers' progress, workouts, goals, and attendance all in one place." = "Track and manage your gym subscribers' progress, workouts, goals, and attendance all in one place.";
+"Developed By Easy Technology Company 2025. all rights reserved" = "Developed By Easy Technology Company 2025. all rights reserved";
+"This will permanently delete all subscribers, workouts, goals, attendance records, and notes. This action cannot be undone." = "This will permanently delete all subscribers, workouts, goals, attendance records, and notes. This action cannot be undone.";
+"iCloud Sync" = "iCloud Sync";
+"Syncing" = "Syncing";
+"Not Signed In" = "Not Signed In";
+"Available" = "Available";
+"Restricted" = "Restricted";
+"Could Not Determine" = "Could Not Determine";
+"Your data will automatically sync across all your devices when signed in to iCloud." = "Your data will automatically sync across all your devices when signed in to iCloud.";
+

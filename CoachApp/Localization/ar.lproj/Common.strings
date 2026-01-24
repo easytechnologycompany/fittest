@@ -1,0 +1,37 @@
+/* Common strings used across multiple screens - Arabic */
+"Cancel" = "إلغاء";
+"Save" = "حفظ";
+"Delete" = "حذف";
+"Edit" = "تعديل";
+"Add" = "إضافة";
+"Done" = "تم";
+"Close" = "إغلاق";
+"OK" = "موافق";
+"Yes" = "نعم";
+"No" = "لا";
+"Name" = "الاسم";
+"Email" = "البريد الإلكتروني";
+"Phone" = "الهاتف";
+"Date" = "التاريخ";
+"Notes" = "ملاحظات";
+"Description" = "الوصف";
+"Title" = "العنوان";
+"Status" = "الحالة";
+"Active" = "نشط";
+"Pending" = "قيد الانتظار";
+"Expired" = "منتهي";
+"Unknown" = "غير معروف";
+"Select" = "اختر";
+"Search" = "بحث";
+"Error" = "خطأ";
+"Success" = "نجح";
+"Loading..." = "جاري التحميل...";
+"Send Results" = "إرسال النتائج";
+"Send Session Details" = "إرسال تفاصيل الجلسة";
+"Session Details" = "تفاصيل الجلسة";
+"Cannot Send Email" = "لا يمكن إرسال البريد الإلكتروني";
+"Email Status" = "حالة البريد الإلكتروني";
+"Set up a Mail account in iOS Mail to send email." = "قم بإعداد حساب بريد إلكتروني في تطبيق Mail لإرسال البريد الإلكتروني.";
+"Email saved to drafts." = "تم حفظ البريد الإلكتروني في المسودات.";
+"Failed to send email" = "فشل إرسال البريد الإلكتروني";
+

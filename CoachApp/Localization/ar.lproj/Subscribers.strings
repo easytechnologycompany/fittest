@@ -1,0 +1,33 @@
+/* Subscribers Screen - Arabic */
+"Subscribers" = "المشتركين";
+"Search subscribers" = "البحث عن المشتركين";
+"Unnamed" = "غير مسمى";
+"Overview" = "نظرة عامة";
+"Physical" = "البدني";
+"Courses" = "الدورات";
+"Attendance" = "الحضور";
+"Progress" = "التقدم";
+"Subscription" = "الاشتراك";
+"Plan" = "الخطة";
+"Start Date" = "تاريخ البدء";
+"Latest Physical Details" = "آخر التفاصيل البدنية";
+"Active Goals" = "الأهداف النشطة";
+"more goals" = "أهداف أخرى";
+"Assigned Courses" = "الدورات المخصصة";
+"more courses" = "دورات أخرى";
+"Medical Information" = "المعلومات الطبية";
+"Injuries" = "الإصابات";
+"Restrictions" = "القيود";
+"Health Conditions" = "الحالات الصحية";
+"Select a subscriber" = "اختر مشترك";
+"How did you hear about us?" = "كيف سمعت عنا؟";
+"Select an option" = "اختر خياراً";
+"Snapchat" = "سناب شات";
+"Instagram" = "إنستغرام";
+"Facebook" = "فيسبوك";
+"Referred by a friend" = "أحالني صديق";
+"Other" = "أخرى";
+"Friend's Name" = "اسم الصديق";
+"Enter friend's name" = "أدخل اسم الصديق";
+"Please specify" = "يرجى التحديد";
+

@@ -1,0 +1,20 @@
+/* Dashboard Screen */
+"Dashboard" = "Dashboard";
+"Total Subscribers" = "Total Subscribers";
+"Training Courses" = "Training Courses";
+"Total Workouts" = "Total Workouts";
+"Active Goals" = "Active Goals";
+"Recent Activity" = "Recent Activity";
+"No Recent Activity" = "No Recent Activity";
+"Activity will appear here as you add workouts and attendance records." = "Activity will appear here as you add workouts and attendance records.";
+"Recent Workouts" = "Recent Workouts";
+"Recent Attendance" = "Recent Attendance";
+"Quick Stats" = "Quick Stats";
+"Total Attendance Records" = "Total Attendance Records";
+"Completed Goals" = "Completed Goals";
+"Pending Goals" = "Pending Goals";
+"Expired Subscriptions" = "Expired Subscriptions";
+"Workout" = "Workout";
+"exercises" = "exercises";
+"Gym Visit" = "Gym Visit";
+

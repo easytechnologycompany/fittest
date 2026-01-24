@@ -1,0 +1,23 @@
+/* Settings Screen - Arabic */
+"Settings" = "الإعدادات";
+"Appearance" = "المظهر";
+"Light" = "فاتح";
+"Dark" = "داكن";
+"System" = "النظام";
+"App Information" = "معلومات التطبيق";
+"Data Management" = "إدارة البيانات";
+"Delete All Data" = "حذف جميع البيانات";
+"About" = "حول";
+"Coach Analytics" = "تحليلات المدرب";
+"Gym Management" = "إدارة الصالة الرياضية";
+"Track and manage your gym subscribers' progress, workouts, goals, and attendance all in one place." = "تتبع وإدارة تقدم المشتركين في صالتك الرياضية وتمارينهم وأهدافهم وحضورهم في مكان واحد.";
+"Developed By Easy Technology Company 2025. all rights reserved" = "تم التطوير بواسطة شركة Easy Technology 2025. جميع الحقوق محفوظة.";
+"This will permanently delete all subscribers, workouts, goals, attendance records, and notes. This action cannot be undone." = "سيؤدي هذا إلى حذف جميع المشتركين والتمارين والأهداف وسجلات الحضور والملاحظات بشكل دائم. لا يمكن التراجع عن هذا الإجراء.";
+"iCloud Sync" = "مزامنة iCloud";
+"Syncing" = "جاري المزامنة";
+"Not Signed In" = "غير مسجل الدخول";
+"Available" = "متاح";
+"Restricted" = "مقيد";
+"Could Not Determine" = "تعذر التحديد";
+"Your data will automatically sync across all your devices when signed in to iCloud." = "سيتم مزامنة بياناتك تلقائياً عبر جميع أجهزتك عند تسجيل الدخول إلى iCloud.";
+

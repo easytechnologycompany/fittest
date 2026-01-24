@@ -1,0 +1,33 @@
+/* Machines Screen - Arabic */
+"Machines" = "الآلات";
+"All" = "الكل";
+"No Machines" = "لا توجد آلات";
+"No Machines Found" = "لم يتم العثور على آلات";
+"Add your first machine to get started." = "أضف أول آلة للبدء.";
+"Try adjusting your search or filters." = "حاول تعديل البحث أو المرشحات.";
+"Search machines..." = "البحث عن آلات...";
+"Sync from ExerciseDB" = "مزامنة من ExerciseDB";
+"Add Custom Machine" = "إضافة آلة مخصصة";
+"Actions" = "الإجراءات";
+"Are you sure you want to delete this machine? This action cannot be undone." = "هل أنت متأكد أنك تريد حذف هذه الآلة؟ لا يمكن التراجع عن هذا الإجراء.";
+"Successfully synced machines from ExerciseDB. New machines have been added." = "تمت مزامنة الآلات بنجاح من ExerciseDB. تمت إضافة آلات جديدة.";
+"Syncing from ExerciseDB..." = "جاري المزامنة من ExerciseDB...";
+"Custom" = "مخصص";
+"Machine Name" = "اسم الآلة";
+"Category" = "الفئة";
+"Description" = "الوصف";
+"Icon" = "الأيقونة";
+"Create Machine" = "إنشاء آلة";
+"Edit Machine" = "تعديل الآلة";
+"Enter machine name" = "أدخل اسم الآلة";
+"Select category" = "اختر الفئة";
+"Enter description" = "أدخل الوصف";
+"Select icon" = "اختر الأيقونة";
+"Required Machines" = "الآلات المطلوبة";
+"Add Machine" = "إضافة آلة";
+"Create New Machine" = "إنشاء آلة جديدة";
+"Add machines to your course. You can create custom machines if needed." = "أضف آلات إلى دورتك. يمكنك إنشاء آلات مخصصة إذا لزم الأمر.";
+"Select Machine" = "اختر الآلة";
+"No machines available" = "لا توجد آلات متاحة";
+"Create a machine first to add it to your course." = "أنشئ آلة أولاً لإضافتها إلى دورتك.";
+

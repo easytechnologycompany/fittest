@@ -1,0 +1,33 @@
+/* Machines Screen - English */
+"Machines" = "Machines";
+"All" = "All";
+"No Machines" = "No Machines";
+"No Machines Found" = "No Machines Found";
+"Add your first machine to get started." = "Add your first machine to get started.";
+"Try adjusting your search or filters." = "Try adjusting your search or filters.";
+"Search machines..." = "Search machines...";
+"Sync from ExerciseDB" = "Sync from ExerciseDB";
+"Add Custom Machine" = "Add Custom Machine";
+"Actions" = "Actions";
+"Are you sure you want to delete this machine? This action cannot be undone." = "Are you sure you want to delete this machine? This action cannot be undone.";
+"Successfully synced machines from ExerciseDB. New machines have been added." = "Successfully synced machines from ExerciseDB. New machines have been added.";
+"Syncing from ExerciseDB..." = "Syncing from ExerciseDB...";
+"Custom" = "Custom";
+"Machine Name" = "Machine Name";
+"Category" = "Category";
+"Description" = "Description";
+"Icon" = "Icon";
+"Create Machine" = "Create Machine";
+"Edit Machine" = "Edit Machine";
+"Enter machine name" = "Enter machine name";
+"Select category" = "Select category";
+"Enter description" = "Enter description";
+"Select icon" = "Select icon";
+"Required Machines" = "Required Machines";
+"Add Machine" = "Add Machine";
+"Create New Machine" = "Create New Machine";
+"Add machines to your course. You can create custom machines if needed." = "Add machines to your course. You can create custom machines if needed.";
+"Select Machine" = "Select Machine";
+"No machines available" = "No machines available";
+"Create a machine first to add it to your course." = "Create a machine first to add it to your course.";
+

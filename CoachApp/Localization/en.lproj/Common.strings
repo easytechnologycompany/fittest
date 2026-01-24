@@ -1,0 +1,37 @@
+/* Common strings used across multiple screens */
+"Cancel" = "Cancel";
+"Save" = "Save";
+"Delete" = "Delete";
+"Edit" = "Edit";
+"Add" = "Add";
+"Done" = "Done";
+"Close" = "Close";
+"OK" = "OK";
+"Yes" = "Yes";
+"No" = "No";
+"Name" = "Name";
+"Email" = "Email";
+"Phone" = "Phone";
+"Date" = "Date";
+"Notes" = "Notes";
+"Description" = "Description";
+"Title" = "Title";
+"Status" = "Status";
+"Active" = "Active";
+"Pending" = "Pending";
+"Expired" = "Expired";
+"Unknown" = "Unknown";
+"Select" = "Select";
+"Search" = "Search";
+"Error" = "Error";
+"Success" = "Success";
+"Loading..." = "Loading...";
+"Send Results" = "Send Results";
+"Send Session Details" = "Send Session Details";
+"Session Details" = "Session Details";
+"Cannot Send Email" = "Cannot Send Email";
+"Email Status" = "Email Status";
+"Set up a Mail account in iOS Mail to send email." = "Set up a Mail account in iOS Mail to send email.";
+"Email saved to drafts." = "Email saved to drafts.";
+"Failed to send email" = "Failed to send email";
+
