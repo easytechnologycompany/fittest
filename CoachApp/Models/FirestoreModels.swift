@@ -102,7 +102,7 @@ struct SessionFS: Codable, Identifiable {
 
 // MARK: - Session Exercise (Firestore)
 struct SessionExerciseFS: Codable, Identifiable {
-    @DocumentID var id: String?
+    var id: String
     var name: String
     var machineName: String?
     var machineCategory: String?
@@ -119,6 +119,43 @@ struct SessionExerciseFS: Codable, Identifiable {
     // Additional metrics
     var notes: String?
     var plusTenCount: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, machineName, machineCategory, rhythm, weight, intensity, targetDuration, enduranceTime, isCompleted, orderIndex, notes, plusTenCount
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decodeIfPresent(String.self, forKey: .id) ?? UUID().uuidString
+        self.name = try container.decode(String.self, forKey: .name)
+        self.machineName = try container.decodeIfPresent(String.self, forKey: .machineName)
+        self.machineCategory = try container.decodeIfPresent(String.self, forKey: .machineCategory)
+        self.rhythm = try container.decodeIfPresent(Int.self, forKey: .rhythm)
+        self.weight = try container.decodeIfPresent(Double.self, forKey: .weight)
+        self.intensity = try container.decodeIfPresent(String.self, forKey: .intensity)
+        self.targetDuration = try container.decodeIfPresent(Double.self, forKey: .targetDuration)
+        self.enduranceTime = try container.decodeIfPresent(Double.self, forKey: .enduranceTime)
+        self.isCompleted = try container.decodeIfPresent(Bool.self, forKey: .isCompleted)
+        self.orderIndex = try container.decodeIfPresent(Int.self, forKey: .orderIndex)
+        self.notes = try container.decodeIfPresent(String.self, forKey: .notes)
+        self.plusTenCount = try container.decodeIfPresent(Int.self, forKey: .plusTenCount)
+    }
+
+    init(id: String = UUID().uuidString, name: String, machineName: String? = nil, machineCategory: String? = nil, rhythm: Int? = nil, weight: Double? = nil, intensity: String? = nil, targetDuration: Double? = nil, enduranceTime: Double? = nil, isCompleted: Bool? = nil, orderIndex: Int? = nil, notes: String? = nil, plusTenCount: Int? = nil) {
+        self.id = id
+        self.name = name
+        self.machineName = machineName
+        self.machineCategory = machineCategory
+        self.rhythm = rhythm
+        self.weight = weight
+        self.intensity = intensity
+        self.targetDuration = targetDuration
+        self.enduranceTime = enduranceTime
+        self.isCompleted = isCompleted
+        self.orderIndex = orderIndex
+        self.notes = notes
+        self.plusTenCount = plusTenCount
+    }
 }
 
 // MARK: - CoachNote (Firestore)

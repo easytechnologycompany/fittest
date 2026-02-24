@@ -274,13 +274,21 @@ struct SubscriberSessionsView: View {
     
     // Helpers
     private func getSessionAndExercise(machine: String, date: Date) -> (SessionFS?, SessionExerciseFS?) {
-        // Find session for date
-        guard let session = sessions.first(where: { normalizeDate($0.date) == date }) else {
+        // Find all sessions for date
+        let dateSessions = sessions.filter { normalizeDate($0.date) == date }
+        
+        if dateSessions.isEmpty {
             return (nil, nil)
         }
-        // Find exercise
-        let exercise = session.exercises?.first(where: { $0.name == machine })
-        return (session, exercise)
+        
+        // Find the specific exercise across ANY of those sessions
+        for session in dateSessions {
+            if let exercise = session.exercises?.first(where: { $0.name == machine }) {
+                return (session, exercise)
+            }
+        }
+        
+        return (dateSessions.first, nil)
     }
     
     private func normalizeDate(_ date: Date) -> Date {

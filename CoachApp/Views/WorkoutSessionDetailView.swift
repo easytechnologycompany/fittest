@@ -56,6 +56,8 @@ struct WorkoutSessionDetailView: View {
     @State private var showGo = false
     @State private var showingMailComposer = false
     @StateObject private var emailComposer = EmailComposerViewModel()
+    @State private var showErrorAlert = false
+    @State private var errorMessage: String?
     
     enum RhythmPhase: String {
         case up = "UP"
@@ -183,6 +185,12 @@ struct WorkoutSessionDetailView: View {
                 if let errorMessage = emailComposer.errorMessage {
                     Text(errorMessage)
                 }
+            }
+            .alert("Error Saving Session", isPresented: $showErrorAlert) {
+                Button("OK", role: .cancel) { }
+            } message: {
+                let msg = errorMessage ?? "Unknown error occurred while saving."
+                Text(msg)
             }
             .overlay {
                 if showCountdown || showGo {
@@ -639,97 +647,105 @@ struct WorkoutSessionDetailView: View {
     
     private func saveSession() {
         Task {
-            // Construct SessionExerciseFS
-            var newExercise = SessionExerciseFS(
-                name: machineName,
-                machineName: machineName,
-                machineCategory: "Unknown",
-                rhythm: Int(rhythmDuration),
-                weight: weight,
-                intensity: "Normal",
-                targetDuration: targetDuration, // Save the GOAL
-                enduranceTime: elapsedSeconds,  // Save the ACTUAL time
-                isCompleted: true,
-                orderIndex: 0,
-                notes: notes,
-                plusTenCount: plusTenCount
-            )
-            
-            // If editing exisiting exercise in existing session:
-            if let existingSession = config.session, let existingExercise = config.exercise {
-                // Update specific exercise in the session
-                var updatedSession = existingSession
+            do {
+                // Construct SessionExerciseFS
+                var newExercise = SessionExerciseFS(
+                    name: machineName,
+                    machineName: machineName,
+                    machineCategory: "Unknown",
+                    rhythm: Int(rhythmDuration),
+                    weight: weight,
+                    intensity: "Normal",
+                    targetDuration: targetDuration, // Save the GOAL
+                    enduranceTime: elapsedSeconds,  // Save the ACTUAL time
+                    isCompleted: true,
+                    orderIndex: 0,
+                    notes: notes,
+                    plusTenCount: plusTenCount
+                )
                 
-                // Fetch fresh copy if possible to avoid stale overwrite
-                if let sessionId = existingSession.id, let freshSession = try? await FirestoreService.shared.getSession(id: sessionId) {
-                    updatedSession = freshSession
-                }
-                
-                var exercises = updatedSession.exercises ?? []
-                
-                newExercise.id = existingExercise.id
-                
-                if let index = exercises.firstIndex(where: { $0.id == existingExercise.id }) {
-                    exercises[index] = newExercise
-                } else {
+                // If editing exisiting exercise in existing session:
+                if let existingSession = config.session, let existingExercise = config.exercise {
+                    // Update specific exercise in the session
+                    var updatedSession = existingSession
+                    
+                    // Fetch fresh copy if possible to avoid stale overwrite
+                    if let sessionId = existingSession.id {
+                        if let freshSession = try? await FirestoreService.shared.getSession(id: sessionId) {
+                            updatedSession = freshSession
+                        }
+                    }
+                    
+                    var exercises = updatedSession.exercises ?? []
+                    
+                    newExercise.id = existingExercise.id
+                    
+                    if let index = exercises.firstIndex(where: { $0.id == existingExercise.id }) {
+                        exercises[index] = newExercise
+                    } else {
+                        exercises.append(newExercise)
+                    }
+                    updatedSession.exercises = exercises
+                    
+                    try await FirestoreService.shared.updateSession(updatedSession)
+                } 
+                // If adding new exercise to existing session (or new session):
+                else if let session = config.session {
+                    // Add to existing session
+                    var updatedSession = session
+                    
+                    // CRITICAL FIX: Fetch latest session from Firestore to avoid overwriting recent changes (Stale UI)
+                    if let sessionId = session.id {
+                        if let freshSession = try? await FirestoreService.shared.getSession(id: sessionId) {
+                            updatedSession = freshSession
+                        }
+                    }
+                    
+                    var exercises = updatedSession.exercises ?? []
+                    newExercise.orderIndex = exercises.count
                     exercises.append(newExercise)
-                }
-                updatedSession.exercises = exercises
-                
-                try? await FirestoreService.shared.updateSession(updatedSession)
-            } 
-            // If adding new exercise to existing session (or new session):
-            else if let session = config.session {
-                // Add to existing session
-                var updatedSession = session
-                
-                // CRITICAL FIX: Fetch latest session from Firestore to avoid overwriting recent changes (Stale UI)
-                if let sessionId = session.id {
-                    if let freshSession = try? await FirestoreService.shared.getSession(id: sessionId) {
-                        updatedSession = freshSession
+                    updatedSession.exercises = exercises
+                    
+                    try await FirestoreService.shared.updateSession(updatedSession)
+                } else if let date = config.date {
+                    // Create NEW session for date
+                    // CRITICAL FIX: Check if a session ALREADY exists for this date/subscriber to avoid duplicates
+                    // This happens if the UI is stale and doesn't know about a session just created by another machine action
+                    var sessionToUse: SessionFS?
+                    
+                    if let subId = subscriber.id {
+                         sessionToUse = try await FirestoreService.shared.findSession(subscriberId: subId, date: date)
+                    }
+                    
+                    if var existingSessionOnServer = sessionToUse {
+                        // Update the EXISTING session we found
+                        var exercises = existingSessionOnServer.exercises ?? []
+                        newExercise.orderIndex = exercises.count
+                        exercises.append(newExercise)
+                        existingSessionOnServer.exercises = exercises
+                        
+                        try await FirestoreService.shared.updateSession(existingSessionOnServer)
+                    } else {
+                        // TRULY New Session
+                        let newSession = SessionFS(
+                            date: date,
+                            status: "Completed",
+                            title: "Workout",
+                            subscriberId: subscriber.id ?? "",
+                            exercises: [newExercise]
+                        )
+                        _ = try await FirestoreService.shared.addSession(newSession)
                     }
                 }
                 
-                var exercises = updatedSession.exercises ?? []
-                newExercise.orderIndex = exercises.count
-                exercises.append(newExercise)
-                updatedSession.exercises = exercises
-                
-                _ = try? await FirestoreService.shared.updateSession(updatedSession)
-                _ = try? await FirestoreService.shared.updateSession(updatedSession)
-            } else if let date = config.date {
-                // Create NEW session for date
-                // CRITICAL FIX: Check if a session ALREADY exists for this date/subscriber to avoid duplicates
-                // This happens if the UI is stale and doesn't know about a session just created by another machine action
-                var sessionToUse: SessionFS?
-                
-                if let subId = subscriber.id {
-                     sessionToUse = try? await FirestoreService.shared.findSession(subscriberId: subId, date: date)
+                await MainActor.run {
+                    dismiss()
                 }
-                
-                if var existingSessionOnServer = sessionToUse {
-                    // Update the EXISTING session we found
-                    var exercises = existingSessionOnServer.exercises ?? []
-                    newExercise.orderIndex = exercises.count
-                    exercises.append(newExercise)
-                    existingSessionOnServer.exercises = exercises
-                    
-                    _ = try? await FirestoreService.shared.updateSession(existingSessionOnServer)
-                } else {
-                    // TRULY New Session
-                    let newSession = SessionFS(
-                        date: date,
-                        status: "Completed",
-                        title: "Workout",
-                        subscriberId: subscriber.id ?? "",
-                        exercises: [newExercise]
-                    )
-                    _ = try? await FirestoreService.shared.addSession(newSession)
+            } catch {
+                await MainActor.run {
+                    self.errorMessage = error.localizedDescription
+                    self.showErrorAlert = true
                 }
-            }
-            
-            await MainActor.run {
-                dismiss()
             }
         }
     }
