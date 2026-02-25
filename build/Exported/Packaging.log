@@ -1,0 +1,671 @@
+2026-02-25 12:22:31 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x8fc0c6400; archive(resolved)="<IDEArchive: 0x8fbd5b5d0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team(resolved)="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x8fc0c6400; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionProcessingPipelineContext: 0x8fc0c6700; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe76580; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe75680; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe75400; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe75180; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe74f00; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe74c80; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe74a00; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="<IDEProvisioningBasicTeam: 0x8fc0b6500; teamID='SBL65MNY44', teamName='(null)'>">
+	<IDEDistributionContext: 0x8fbe74780; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="(null)">
+	<IDEDistributionContext: 0x8fbe74500; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="(null)">
+	<IDEDistributionContext: 0x8fbe74280; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="(null)">
+	<IDEDistributionContext: 0x8fbe74000; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x8fb5f1c60>", team="(null)">
+	<IDEDistributionContext: 0x105441b40; archive = "<IDEArchive: 0x8fbd5b5d0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x8fc0c6400>
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2026-02-25 12:22:31 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app' '/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app'
+2026-02-25 12:22:31 +0000  >>> Copying /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app 
+2026-02-25 12:22:31 +0000  copying file ./_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  25759 bytes for ./_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Subscribers.strings ... 
+2026-02-25 12:22:31 +0000  1340 bytes for ./ar.lproj/Subscribers.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Machines.strings ... 
+2026-02-25 12:22:31 +0000  2165 bytes for ./ar.lproj/Machines.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Dashboard.strings ... 
+2026-02-25 12:22:31 +0000  1106 bytes for ./ar.lproj/Dashboard.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Courses.strings ... 
+2026-02-25 12:22:31 +0000  3834 bytes for ./ar.lproj/Courses.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Goals.strings ... 
+2026-02-25 12:22:31 +0000  1820 bytes for ./ar.lproj/Goals.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Common.strings ... 
+2026-02-25 12:22:31 +0000  1434 bytes for ./ar.lproj/Common.strings
+2026-02-25 12:22:31 +0000  copying file ./ar.lproj/Settings.strings ... 
+2026-02-25 12:22:31 +0000  1824 bytes for ./ar.lproj/Settings.strings
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCore.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  855 bytes for ./Firebase_FirebaseCore.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCore.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  693 bytes for ./Firebase_FirebaseCore.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Subscribers.strings ... 
+2026-02-25 12:22:31 +0000  609 bytes for ./en.lproj/Subscribers.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Machines.strings ... 
+2026-02-25 12:22:31 +0000  914 bytes for ./en.lproj/Machines.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Dashboard.strings ... 
+2026-02-25 12:22:31 +0000  466 bytes for ./en.lproj/Dashboard.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Courses.strings ... 
+2026-02-25 12:22:31 +0000  1555 bytes for ./en.lproj/Courses.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Goals.strings ... 
+2026-02-25 12:22:31 +0000  782 bytes for ./en.lproj/Goals.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Common.strings ... 
+2026-02-25 12:22:31 +0000  543 bytes for ./en.lproj/Common.strings
+2026-02-25 12:22:31 +0000  copying file ./en.lproj/Settings.strings ... 
+2026-02-25 12:22:31 +0000  715 bytes for ./en.lproj/Settings.strings
+2026-02-25 12:22:31 +0000  copying file ./gRPC_grpcppWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  817 bytes for ./gRPC_grpcppWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./gRPC_grpcppWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  686 bytes for ./gRPC_grpcppWrapper.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GTMSessionFetcher_GTMSessionFetcherCore.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  598 bytes for ./GTMSessionFetcher_GTMSessionFetcherCore.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GTMSessionFetcher_GTMSessionFetcherCore.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  723 bytes for ./GTMSessionFetcher_GTMSessionFetcherCore.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./leveldb_leveldb.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  856 bytes for ./leveldb_leveldb.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./leveldb_leveldb.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  673 bytes for ./leveldb_leveldb.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./nanopb_nanopb.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  374 bytes for ./nanopb_nanopb.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./nanopb_nanopb.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  667 bytes for ./nanopb_nanopb.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./AppIcon60x60@2x.png ... 
+2026-02-25 12:22:31 +0000  5763 bytes for ./AppIcon60x60@2x.png
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  478 bytes for ./GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  745 bytes for ./GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-NSData.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  478 bytes for ./GoogleUtilities_GoogleUtilities-NSData.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  719 bytes for ./GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./gRPC_grpcWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  817 bytes for ./gRPC_grpcWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./gRPC_grpcWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  682 bytes for ./gRPC_grpcWrapper.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCoreInternal.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  855 bytes for ./Firebase_FirebaseCoreInternal.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCoreInternal.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  709 bytes for ./Firebase_FirebaseCoreInternal.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseAuth.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  2102 bytes for ./Firebase_FirebaseAuth.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseAuth.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  693 bytes for ./Firebase_FirebaseAuth.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Logger.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  478 bytes for ./GoogleUtilities_GoogleUtilities-Logger.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  719 bytes for ./GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./CoachApp ... 
+2026-02-25 12:22:31 +0000  14260880 bytes for ./CoachApp
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Reachability.bundle/PrivacyInfo.xcprivacy ... 
+478 bytes for ./GoogleUtilities_GoogleUtilities-Reachability.bundle/PrivacyInfo.xcprivacy
+copying file ./GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  731 bytes for ./GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseFirestore.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  1105 bytes for ./Firebase_FirebaseFirestore.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseFirestore.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  703 bytes for ./Firebase_FirebaseFirestore.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GoogleService-Info.plist ... 
+2026-02-25 12:22:31 +0000  476 bytes for ./GoogleService-Info.plist
+2026-02-25 12:22:31 +0000  copying file ./gRPC_opensslWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  817 bytes for ./gRPC_opensslWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./gRPC_opensslWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  688 bytes for ./gRPC_opensslWrapper.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Network.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  856 bytes for ./GoogleUtilities_GoogleUtilities-Network.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  721 bytes for ./GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Assets.car ... 
+2026-02-25 12:22:31 +0000  109176 bytes for ./Assets.car
+2026-02-25 12:22:31 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2026-02-25 12:22:31 +0000  7508 bytes for ./AppIcon76x76@2x~ipad.png
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCoreExtension.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  478 bytes for ./Firebase_FirebaseCoreExtension.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Firebase_FirebaseCoreExtension.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  711 bytes for ./Firebase_FirebaseCoreExtension.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Environment.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  855 bytes for ./GoogleUtilities_GoogleUtilities-Environment.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  729 bytes for ./GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpcpp.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  2296 bytes for ./Frameworks/grpcpp.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpcpp.framework/grpcpp ... 
+2026-02-25 12:22:31 +0000  51360 bytes for ./Frameworks/grpcpp.framework/grpcpp
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpcpp.framework/grpcpp.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  599 bytes for ./Frameworks/grpcpp.framework/grpcpp.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpcpp.framework/grpcpp.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  761 bytes for ./Frameworks/grpcpp.framework/grpcpp.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpcpp.framework/Info.plist ... 
+2026-02-25 12:22:31 +0000  1512 bytes for ./Frameworks/grpcpp.framework/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/FirebaseFirestoreInternal.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  2404 bytes for ./Frameworks/FirebaseFirestoreInternal.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal ... 
+2026-02-25 12:22:31 +0000  51408 bytes for ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  1105 bytes for ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  817 bytes for ./Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/FirebaseFirestoreInternal.framework/Info.plist ... 
+2026-02-25 12:22:31 +0000  1569 bytes for ./Frameworks/FirebaseFirestoreInternal.framework/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpc.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  2288 bytes for ./Frameworks/grpc.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpc.framework/grpc ... 
+2026-02-25 12:22:31 +0000  51360 bytes for ./Frameworks/grpc.framework/grpc
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpc.framework/grpc.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  599 bytes for ./Frameworks/grpc.framework/grpc.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpc.framework/grpc.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  757 bytes for ./Frameworks/grpc.framework/grpc.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/grpc.framework/Info.plist ... 
+2026-02-25 12:22:31 +0000  1506 bytes for ./Frameworks/grpc.framework/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/openssl_grpc.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  2320 bytes for ./Frameworks/openssl_grpc.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/openssl_grpc.framework/openssl_grpc ... 
+2026-02-25 12:22:31 +0000  51376 bytes for ./Frameworks/openssl_grpc.framework/openssl_grpc
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/openssl_grpc.framework/openssl_grpc.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  599 bytes for ./Frameworks/openssl_grpc.framework/openssl_grpc.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/openssl_grpc.framework/openssl_grpc.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  773 bytes for ./Frameworks/openssl_grpc.framework/openssl_grpc.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/openssl_grpc.framework/Info.plist ... 
+2026-02-25 12:22:31 +0000  1530 bytes for ./Frameworks/openssl_grpc.framework/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/absl.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:31 +0000  2308 bytes for ./Frameworks/absl.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/absl.framework/absl ... 
+2026-02-25 12:22:31 +0000  51360 bytes for ./Frameworks/absl.framework/absl
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/absl.framework/xcprivacy.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  381 bytes for ./Frameworks/absl.framework/xcprivacy.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/absl.framework/xcprivacy.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  770 bytes for ./Frameworks/absl.framework/xcprivacy.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./Frameworks/absl.framework/Info.plist ... 
+2026-02-25 12:22:31 +0000  1509 bytes for ./Frameworks/absl.framework/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./embedded.mobileprovision ... 
+2026-02-25 12:22:31 +0000  24426 bytes for ./embedded.mobileprovision
+2026-02-25 12:22:31 +0000  copying file ./Info.plist ... 
+2026-02-25 12:22:31 +0000  1636 bytes for ./Info.plist
+2026-02-25 12:22:31 +0000  copying file ./abseil_abslWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:31 +0000  380 bytes for ./abseil_abslWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:31 +0000  copying file ./abseil_abslWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:31 +0000  690 bytes for ./abseil_abslWrapper.bundle/Info.plist
+2026-02-25 12:22:31 +0000  copying file ./PkgInfo ... 
+2026-02-25 12:22:31 +0000  8 bytes for ./PkgInfo
+2026-02-25 12:22:31 +0000 [MT] /usr/bin/ditto exited with 0
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2026-02-25 12:22:31 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x8f994b660; bundleID='org.cocoapods.FirebaseFirestoreInternal', path='<DVTFilePath:0x8fbe49700:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b6c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.FirebaseFirestoreInternal', executablePath='<DVTFilePath:0x8fbf64cb0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal'>', hardenedRuntime='1'>'>
+2026-02-25 12:22:31 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x8f994b7e0; bundleID='org.cocoapods.absl', path='<DVTFilePath:0x8f994a7c0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b840; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.absl', executablePath='<DVTFilePath:0x8f994aa60:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework/absl'>', hardenedRuntime='1'>'>
+2026-02-25 12:22:31 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x8f994b5a0; bundleID='org.cocoapods.grpc', path='<DVTFilePath:0x8f9949f80:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpc', executablePath='<DVTFilePath:0x8f99487e0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework/grpc'>', hardenedRuntime='1'>'>
+2026-02-25 12:22:31 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x8f994b540; bundleID='org.cocoapods.grpcpp', path='<DVTFilePath:0x8fbf64bd0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b4e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpcpp', executablePath='<DVTFilePath:0x8f9948360:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework/grpcpp'>', hardenedRuntime='1'>'>
+2026-02-25 12:22:31 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x8f994b720; bundleID='org.cocoapods.openssl-grpc', path='<DVTFilePath:0x8fbf64e00:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b780; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.openssl-grpc', executablePath='<DVTFilePath:0x8f994a400:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc'>', hardenedRuntime='1'>'>
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2026-02-25 12:22:31 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework are []
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework are []
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework are []
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework are []
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework are []
+2026-02-25 12:22:31 +0000 [MT] Archs to thin for item /Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app are []
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionODRStep
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-02-25 12:22:31 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2026-02-25 12:22:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b660; bundleID='org.cocoapods.FirebaseFirestoreInternal', path='<DVTFilePath:0x8fbe49700:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b6c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.FirebaseFirestoreInternal', executablePath='<DVTFilePath:0x8fbf64cb0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal'>', hardenedRuntime='1'>'>: {
+}
+2026-02-25 12:22:31 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b660; bundleID='org.cocoapods.FirebaseFirestoreInternal', path='<DVTFilePath:0x8fbe49700:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b6c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.FirebaseFirestoreInternal', executablePath='<DVTFilePath:0x8fbf64cb0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal'>', hardenedRuntime='1'>'> are: {
+}
+2026-02-25 12:22:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b660; bundleID='org.cocoapods.FirebaseFirestoreInternal', path='<DVTFilePath:0x8fbe49700:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b6c0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.FirebaseFirestoreInternal', executablePath='<DVTFilePath:0x8fbf64cb0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~EjOsMT
+2026-02-25 12:22:31 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a139d0; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~EjOsMT",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework"
+)'>
+2026-02-25 12:22:31 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.FirebaseFirestoreInternal]
+2026-02-25 12:22:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b7e0; bundleID='org.cocoapods.absl', path='<DVTFilePath:0x8f994a7c0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b840; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.absl', executablePath='<DVTFilePath:0x8f994aa60:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework/absl'>', hardenedRuntime='1'>'>: {
+}
+2026-02-25 12:22:31 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:31 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b7e0; bundleID='org.cocoapods.absl', path='<DVTFilePath:0x8f994a7c0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b840; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.absl', executablePath='<DVTFilePath:0x8f994aa60:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework/absl'>', hardenedRuntime='1'>'> are: {
+}
+2026-02-25 12:22:31 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b7e0; bundleID='org.cocoapods.absl', path='<DVTFilePath:0x8f994a7c0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b840; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.absl', executablePath='<DVTFilePath:0x8f994aa60:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/absl.framework/absl'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~cx1eZ7
+2026-02-25 12:22:31 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a13b10; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~cx1eZ7",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/absl.framework"
+)'>
+2026-02-25 12:22:32 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/absl.framework: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/absl.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.absl]
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b5a0; bundleID='org.cocoapods.grpc', path='<DVTFilePath:0x8f9949f80:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpc', executablePath='<DVTFilePath:0x8f99487e0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework/grpc'>', hardenedRuntime='1'>'>: {
+}
+2026-02-25 12:22:32 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b5a0; bundleID='org.cocoapods.grpc', path='<DVTFilePath:0x8f9949f80:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpc', executablePath='<DVTFilePath:0x8f99487e0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework/grpc'>', hardenedRuntime='1'>'> are: {
+}
+2026-02-25 12:22:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b5a0; bundleID='org.cocoapods.grpc', path='<DVTFilePath:0x8f9949f80:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b600; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpc', executablePath='<DVTFilePath:0x8f99487e0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpc.framework/grpc'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~itMhaP
+2026-02-25 12:22:32 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a13b10; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~itMhaP",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpc.framework"
+)'>
+2026-02-25 12:22:32 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpc.framework: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpc.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.grpc]
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b540; bundleID='org.cocoapods.grpcpp', path='<DVTFilePath:0x8fbf64bd0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b4e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpcpp', executablePath='<DVTFilePath:0x8f9948360:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework/grpcpp'>', hardenedRuntime='1'>'>: {
+}
+2026-02-25 12:22:32 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b540; bundleID='org.cocoapods.grpcpp', path='<DVTFilePath:0x8fbf64bd0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b4e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpcpp', executablePath='<DVTFilePath:0x8f9948360:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework/grpcpp'>', hardenedRuntime='1'>'> are: {
+}
+2026-02-25 12:22:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b540; bundleID='org.cocoapods.grpcpp', path='<DVTFilePath:0x8fbf64bd0:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b4e0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.grpcpp', executablePath='<DVTFilePath:0x8f9948360:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/grpcpp.framework/grpcpp'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~wpz6aj
+2026-02-25 12:22:32 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a13b10; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~wpz6aj",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpcpp.framework"
+)'>
+2026-02-25 12:22:32 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpcpp.framework: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpcpp.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.grpcpp]
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b720; bundleID='org.cocoapods.openssl-grpc', path='<DVTFilePath:0x8fbf64e00:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b780; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.openssl-grpc', executablePath='<DVTFilePath:0x8f994a400:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc'>', hardenedRuntime='1'>'>: {
+}
+2026-02-25 12:22:32 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b720; bundleID='org.cocoapods.openssl-grpc', path='<DVTFilePath:0x8fbf64e00:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b780; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.openssl-grpc', executablePath='<DVTFilePath:0x8f994a400:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc'>', hardenedRuntime='1'>'> are: {
+}
+2026-02-25 12:22:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b720; bundleID='org.cocoapods.openssl-grpc', path='<DVTFilePath:0x8fbf64e00:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b780; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='(null)', teamID='SBL65MNY44', identifier='org.cocoapods.openssl-grpc', executablePath='<DVTFilePath:0x8f994a400:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~97l0AY
+2026-02-25 12:22:32 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a13b10; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~97l0AY",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/openssl_grpc.framework"
+)'>
+2026-02-25 12:22:32 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/openssl_grpc.framework: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/openssl_grpc.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.openssl-grpc]
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b8a0; bundleID='com.zaid.FitFast', path='<DVTFilePath:0x8f9808480:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b900; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e340; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='{
+    "application-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "aps-environment" = development;
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.icloud-services" =     (
+        CloudKit,
+        CloudDocuments
+    );
+    "com.apple.developer.team-identifier" = SBL65MNY44;
+    "com.apple.developer.ubiquity-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "get-task-allow" = 1;
+}', teamID='SBL65MNY44', identifier='com.zaid.FitFast', executablePath='<DVTFilePath:0x8f9948180:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/CoachApp'>', hardenedRuntime='1'>'>: {
+    "application-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "aps-environment" = production;
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.icloud-services" =     (
+        CloudKit,
+        CloudDocuments
+    );
+    "com.apple.developer.team-identifier" = SBL65MNY44;
+    "com.apple.developer.ubiquity-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "get-task-allow" = 0;
+}
+2026-02-25 12:22:32 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-02-25 12:22:32 +0000 [MT] Entitlements for <IDEDistributionItem: 0x8f994b8a0; bundleID='com.zaid.FitFast', path='<DVTFilePath:0x8f9808480:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b900; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='{
+    "application-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "aps-environment" = development;
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.icloud-services" =     (
+        CloudKit,
+        CloudDocuments
+    );
+    "com.apple.developer.team-identifier" = SBL65MNY44;
+    "com.apple.developer.ubiquity-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "get-task-allow" = 1;
+}', teamID='SBL65MNY44', identifier='com.zaid.FitFast', executablePath='<DVTFilePath:0x8f9948180:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/CoachApp'>', hardenedRuntime='1'>'> are: {
+    "application-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "aps-environment" = production;
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.icloud-services" =     (
+        CloudKit,
+        CloudDocuments
+    );
+    "com.apple.developer.team-identifier" = SBL65MNY44;
+    "com.apple.developer.ubiquity-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "get-task-allow" = 0;
+}
+2026-02-25 12:22:32 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x8f994b8a0; bundleID='com.zaid.FitFast', path='<DVTFilePath:0x8f9808480:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x8f994b900; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x8f985e4c0; name='Apple Development: easytech copmany (2VQVT9KX34)', hash='91055A52F9C1532486AF02760DDA1404FA2FF425', serialNumber='336CC4A786E36194BE72D2FA5F08445C', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-01-03 09:46:09 +0000''>', entitlements='{
+    "application-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "aps-environment" = development;
+    "com.apple.developer.icloud-container-identifiers" =     (
+    );
+    "com.apple.developer.icloud-services" =     (
+        CloudKit,
+        CloudDocuments
+    );
+    "com.apple.developer.team-identifier" = SBL65MNY44;
+    "com.apple.developer.ubiquity-container-identifiers" =     (
+    );
+    "com.apple.developer.ubiquity-kvstore-identifier" = "SBL65MNY44.com.zaid.FitFast";
+    "get-task-allow" = 1;
+}', teamID='SBL65MNY44', identifier='com.zaid.FitFast', executablePath='<DVTFilePath:0x8f9948180:'/Users/zaidaqrawi/Documents/CoachApp/build/CoachApp.xcarchive/Products/Applications/CoachApp.app/CoachApp'>', hardenedRuntime='1'>'> to: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~y2P0YC
+2026-02-25 12:22:32 +0000 [MT] invoking codesign: <NSConcreteTask: 0x8f9a13b10; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    B48CCB1EAC9E115A45A16E64B3E563D1B1E285D2,
+    "--entitlements",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/entitlements~~~y2P0YC",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app"
+)'>
+2026-02-25 12:22:32 +0000 [MT] codesign output: /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app: replacing existing signature
+/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app: signed app bundle with Mach-O thin (arm64) [com.zaid.FitFast]
+2026-02-25 12:22:32 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2026-02-25 12:22:32 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root' '/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Packages/CoachApp.ipa'
+2026-02-25 12:22:32 +0000  >>> Copying /var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root 
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  25759 bytes for ./Payload/CoachApp.app/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Subscribers.strings ... 
+2026-02-25 12:22:32 +0000  1340 bytes for ./Payload/CoachApp.app/ar.lproj/Subscribers.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Machines.strings ... 
+2026-02-25 12:22:32 +0000  2165 bytes for ./Payload/CoachApp.app/ar.lproj/Machines.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Dashboard.strings ... 
+2026-02-25 12:22:32 +0000  1106 bytes for ./Payload/CoachApp.app/ar.lproj/Dashboard.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Courses.strings ... 
+2026-02-25 12:22:32 +0000  3834 bytes for ./Payload/CoachApp.app/ar.lproj/Courses.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Goals.strings ... 
+2026-02-25 12:22:32 +0000  1820 bytes for ./Payload/CoachApp.app/ar.lproj/Goals.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Common.strings ... 
+2026-02-25 12:22:32 +0000  1434 bytes for ./Payload/CoachApp.app/ar.lproj/Common.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/ar.lproj/Settings.strings ... 
+2026-02-25 12:22:32 +0000  1824 bytes for ./Payload/CoachApp.app/ar.lproj/Settings.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseCore.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  855 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCore.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseCore.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  693 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCore.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Subscribers.strings ... 
+2026-02-25 12:22:32 +0000  609 bytes for ./Payload/CoachApp.app/en.lproj/Subscribers.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Machines.strings ... 
+2026-02-25 12:22:32 +0000  914 bytes for ./Payload/CoachApp.app/en.lproj/Machines.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Dashboard.strings ... 
+2026-02-25 12:22:32 +0000  466 bytes for ./Payload/CoachApp.app/en.lproj/Dashboard.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Courses.strings ... 
+2026-02-25 12:22:32 +0000  1555 bytes for ./Payload/CoachApp.app/en.lproj/Courses.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Goals.strings ... 
+2026-02-25 12:22:32 +0000  782 bytes for ./Payload/CoachApp.app/en.lproj/Goals.strings
+copying file ./Payload/CoachApp.app/en.lproj/Common.strings ... 
+2026-02-25 12:22:32 +0000  543 bytes for ./Payload/CoachApp.app/en.lproj/Common.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/en.lproj/Settings.strings ... 
+2026-02-25 12:22:32 +0000  715 bytes for ./Payload/CoachApp.app/en.lproj/Settings.strings
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/gRPC_grpcppWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  817 bytes for ./Payload/CoachApp.app/gRPC_grpcppWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/gRPC_grpcppWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  686 bytes for ./Payload/CoachApp.app/gRPC_grpcppWrapper.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GTMSessionFetcher_GTMSessionFetcherCore.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  598 bytes for ./Payload/CoachApp.app/GTMSessionFetcher_GTMSessionFetcherCore.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GTMSessionFetcher_GTMSessionFetcherCore.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  723 bytes for ./Payload/CoachApp.app/GTMSessionFetcher_GTMSessionFetcherCore.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/leveldb_leveldb.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  856 bytes for ./Payload/CoachApp.app/leveldb_leveldb.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/leveldb_leveldb.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  673 bytes for ./Payload/CoachApp.app/leveldb_leveldb.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/nanopb_nanopb.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  374 bytes for ./Payload/CoachApp.app/nanopb_nanopb.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/nanopb_nanopb.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  667 bytes for ./Payload/CoachApp.app/nanopb_nanopb.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/AppIcon60x60@2x.png ... 
+2026-02-25 12:22:32 +0000  5763 bytes for ./Payload/CoachApp.app/AppIcon60x60@2x.png
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  478 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  745 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-AppDelegateSwizzler.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  478 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  719 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-NSData.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/gRPC_grpcWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  817 bytes for ./Payload/CoachApp.app/gRPC_grpcWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/gRPC_grpcWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  682 bytes for ./Payload/CoachApp.app/gRPC_grpcWrapper.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseCoreInternal.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  855 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCoreInternal.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseCoreInternal.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  709 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCoreInternal.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseAuth.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  2102 bytes for ./Payload/CoachApp.app/Firebase_FirebaseAuth.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseAuth.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  693 bytes for ./Payload/CoachApp.app/Firebase_FirebaseAuth.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  478 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  719 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Logger.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/CoachApp ... 
+2026-02-25 12:22:32 +0000  14260944 bytes for ./Payload/CoachApp.app/CoachApp
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle/PrivacyInfo.xcprivacy ... 
+478 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist ... 
+731 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Reachability.bundle/Info.plist
+copying file ./Payload/CoachApp.app/Firebase_FirebaseFirestore.bundle/PrivacyInfo.xcprivacy ... 
+1105 bytes for ./Payload/CoachApp.app/Firebase_FirebaseFirestore.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/Firebase_FirebaseFirestore.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  703 bytes for ./Payload/CoachApp.app/Firebase_FirebaseFirestore.bundle/Info.plist
+copying file ./Payload/CoachApp.app/GoogleService-Info.plist ... 
+2026-02-25 12:22:32 +0000  476 bytes for ./Payload/CoachApp.app/GoogleService-Info.plist
+copying file ./Payload/CoachApp.app/gRPC_opensslWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  817 bytes for ./Payload/CoachApp.app/gRPC_opensslWrapper.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/gRPC_opensslWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  688 bytes for ./Payload/CoachApp.app/gRPC_opensslWrapper.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Network.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  856 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Network.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  721 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Network.bundle/Info.plist
+copying file ./Payload/CoachApp.app/Assets.car ... 
+2026-02-25 12:22:32 +0000  109176 bytes for ./Payload/CoachApp.app/Assets.car
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/AppIcon76x76@2x~ipad.png ... 
+2026-02-25 12:22:32 +0000  7508 bytes for ./Payload/CoachApp.app/AppIcon76x76@2x~ipad.png
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Firebase_FirebaseCoreExtension.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  478 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCoreExtension.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/Firebase_FirebaseCoreExtension.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  711 bytes for ./Payload/CoachApp.app/Firebase_FirebaseCoreExtension.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  855 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  729 bytes for ./Payload/CoachApp.app/GoogleUtilities_GoogleUtilities-Environment.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpcpp.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  2296 bytes for ./Payload/CoachApp.app/Frameworks/grpcpp.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp ... 
+2026-02-25 12:22:32 +0000  51424 bytes for ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  599 bytes for ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp.bundle/PrivacyInfo.xcprivacy
+copying file ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  761 bytes for ./Payload/CoachApp.app/Frameworks/grpcpp.framework/grpcpp.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpcpp.framework/Info.plist ... 
+1512 bytes for ./Payload/CoachApp.app/Frameworks/grpcpp.framework/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  2404 bytes for ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal ... 
+2026-02-25 12:22:32 +0000  51472 bytes for ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  1105 bytes for ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  817 bytes for ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/FirebaseFirestoreInternal_Privacy.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/Info.plist ... 
+2026-02-25 12:22:32 +0000  1569 bytes for ./Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpc.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  2288 bytes for ./Payload/CoachApp.app/Frameworks/grpc.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc ... 
+2026-02-25 12:22:32 +0000  51424 bytes for ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  599 bytes for ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  757 bytes for ./Payload/CoachApp.app/Frameworks/grpc.framework/grpc.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/grpc.framework/Info.plist ... 
+2026-02-25 12:22:32 +0000  1506 bytes for ./Payload/CoachApp.app/Frameworks/grpc.framework/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  2320 bytes for ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc ... 
+2026-02-25 12:22:32 +0000  51440 bytes for ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  599 bytes for ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  773 bytes for ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/openssl_grpc.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/Info.plist ... 
+2026-02-25 12:22:32 +0000  1530 bytes for ./Payload/CoachApp.app/Frameworks/openssl_grpc.framework/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/absl.framework/_CodeSignature/CodeResources ... 
+2026-02-25 12:22:32 +0000  2308 bytes for ./Payload/CoachApp.app/Frameworks/absl.framework/_CodeSignature/CodeResources
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/absl.framework/absl ... 
+2026-02-25 12:22:32 +0000  51424 bytes for ./Payload/CoachApp.app/Frameworks/absl.framework/absl
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/absl.framework/xcprivacy.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  381 bytes for ./Payload/CoachApp.app/Frameworks/absl.framework/xcprivacy.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/absl.framework/xcprivacy.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  770 bytes for ./Payload/CoachApp.app/Frameworks/absl.framework/xcprivacy.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Frameworks/absl.framework/Info.plist ... 
+2026-02-25 12:22:32 +0000  1509 bytes for ./Payload/CoachApp.app/Frameworks/absl.framework/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/embedded.mobileprovision ... 
+2026-02-25 12:22:32 +0000  18271 bytes for ./Payload/CoachApp.app/embedded.mobileprovision
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/Info.plist ... 
+2026-02-25 12:22:32 +0000  1636 bytes for ./Payload/CoachApp.app/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/abseil_abslWrapper.bundle/PrivacyInfo.xcprivacy ... 
+2026-02-25 12:22:32 +0000  380 bytes for ./Payload/CoachApp.app/abseil_abslWrapper.bundle/PrivacyInfo.xcprivacy
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/abseil_abslWrapper.bundle/Info.plist ... 
+2026-02-25 12:22:32 +0000  690 bytes for ./Payload/CoachApp.app/abseil_abslWrapper.bundle/Info.plist
+2026-02-25 12:22:32 +0000  copying file ./Payload/CoachApp.app/PkgInfo ... 
+2026-02-25 12:22:32 +0000  8 bytes for ./Payload/CoachApp.app/PkgInfo
+2026-02-25 12:22:32 +0000 [MT] /usr/bin/ditto exited with 0
+2026-02-25 12:22:32 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2026-02-25 12:22:32 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2026-02-25 12:22:32 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8f9a0fd20:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpc.framework'>
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8fbebce00:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/FirebaseFirestoreInternal.framework'>
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8f9a0fba0:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/absl.framework'>
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8fc341ff0:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/grpcpp.framework'>
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8fc342060:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app/Frameworks/openssl_grpc.framework'>
+2026-02-25 12:22:32 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x8f9a0e1c0:'/var/folders/7y/mn0kqlsd4j76q0m4d4r3cb2c0000gn/T/XcodeDistPipeline.~~~C1AM8A/Root/Payload/CoachApp.app'>
+2026-02-25 12:22:32 +0000 [MT] Processing step: IDEDistributionCreateManifestStep
