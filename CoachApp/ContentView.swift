@@ -13,6 +13,7 @@ struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @AppStorage("appearanceMode") private var appearanceMode: String = "system"
     @State private var selectedTab = 0
+    @AppStorage("requestedRootTab") private var requestedRootTab: Int = -1
     @StateObject private var migrationService = MigrationService.shared
     @State private var showMigrationView = false
     
@@ -38,6 +39,7 @@ struct ContentView: View {
         }
         .onAppear {
             checkMigrationStatus()
+            handleRequestedRootTab()
         }
         .onChange(of: migrationService.migrationComplete) { oldValue, newValue in
             if newValue {
@@ -48,6 +50,9 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+        .onChange(of: requestedRootTab) { oldValue, newValue in
+            handleRequestedRootTab()
         }
     }
     
@@ -155,6 +160,12 @@ struct ContentView: View {
                 await migrationService.checkAndMigrate(modelContext: modelContext)
             }
         }
+    }
+    
+    private func handleRequestedRootTab() {
+        guard requestedRootTab >= 0 else { return }
+        selectedTab = requestedRootTab
+        requestedRootTab = -1
     }
     
     #if os(iOS)

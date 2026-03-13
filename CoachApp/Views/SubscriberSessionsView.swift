@@ -11,6 +11,8 @@ struct SubscriberSessionsView: View {
     let subscriber: SubscriberFS
     let sessions: [SessionFS]
     @Environment(\.colorScheme) var colorScheme
+    @AppStorage("pendingSubscriberSelection") private var pendingSubscriberID: String = ""
+    @AppStorage("requestedRootTab") private var requestedRootTab: Int = -1
     
     let availableExercises: [String]
     
@@ -22,26 +24,24 @@ struct SubscriberSessionsView: View {
     @StateObject private var emailComposer = EmailComposerViewModel()
     @State private var refreshTrigger = UUID()
     
+    private static let preferredExerciseOrder: [String] = [
+        "Elliptical",
+        "Chest press",
+        "Back extension",
+        "Lat pull down",
+        "Rowing",
+        "Abdominal",
+        "Abduction",
+        "Adduction",
+        "Leg press",
+        "Dumbbells"
+    ]
+    
     // Config for Editor Presentation moved to SessionEditorConfig in FirestoreModels.swift
     
     // Computed Properties
     private var exercises: [String] {
-        // Get unique machine names from sessions
-        let sessionExercises = Set(sessions.flatMap { $0.exercises ?? [] }.map { $0.name })
-        
-        // Combine with availableExercises (from Firestore / Settings)
-        let all = Set(availableExercises).union(sessionExercises)
-        
-        // Sort: Defined machines first (preserve original order if possible?), then others alphabetically.
-        // Since Set kills order, we rely on availableExercises being ordered.
-        
-        // Filter those in availableExercises to keep their order
-        let known = availableExercises.filter { all.contains($0) }
-        
-        // Find any that are in sessions but NOT in availableExercises (e.g. deleted ones)
-        let unknown = all.subtracting(Set(known)).sorted()
-        
-        return known + unknown
+        Self.preferredExerciseOrder
     }
     
     private var sortedSessions: [SessionFS] {
@@ -75,12 +75,12 @@ struct SubscriberSessionsView: View {
             
             // Machine Rows
             VStack(spacing: 0) {
-                ForEach(exercises, id: \.self) { machine in
+                ForEach(Array(exercises.enumerated()), id: \.element) { index, machine in
                     VStack(spacing: 0) {
                         Button {
                             editorConfig = SessionEditorConfig(machine: machine, date: Date())
                         } label: {
-                            Text(machine)
+                            Text("\(index + 1). \(machine)")
                                 .font(.subheadline)
                                 .fontWeight(.medium)
                                 .foregroundStyle(.white)
@@ -175,6 +175,25 @@ struct SubscriberSessionsView: View {
     
     var body: some View {
         VStack(spacing: 0) {
+            if showAddButton {
+                HStack {
+                    Spacer()
+                    
+                    Button(action: openNewSessionInMainSessionsView) {
+                        Label("Create Session", systemImage: "plus.circle.fill")
+                            .font(.headline)
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 18)
+                            .padding(.vertical, 12)
+                            .background(AppTheme.orange)
+                            .clipShape(Capsule())
+                    }
+                    .disabled(subscriber.id == nil)
+                }
+                .padding(.horizontal)
+                .padding(.top)
+            }
+            
             ScrollView(.vertical, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     // Left Column (Fixed)
@@ -197,14 +216,10 @@ struct SubscriberSessionsView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 HStack(spacing: 16) {
                     if showAddButton {
-                        Button(action: {
-                            if let firstExercise = exercises.first {
-                                editorConfig = SessionEditorConfig(machine: firstExercise, date: Date())
-                            }
-                        }) {
+                        Button(action: openNewSessionInMainSessionsView) {
                             Label("Add Session", systemImage: "plus")
                         }
-                        .disabled(exercises.isEmpty)
+                        .disabled(subscriber.id == nil)
                     }
                     
                     Button(action: {
@@ -267,6 +282,13 @@ struct SubscriberSessionsView: View {
         }
     }
     
+    private func openNewSessionInMainSessionsView() {
+        guard let subscriberID = subscriber.id else { return }
+        
+        pendingSubscriberID = subscriberID
+        requestedRootTab = 3
+    }
+    
     private func sendAllSessionsByEmail() {
         // ... update email logic to use sessions ...
         // Placeholder for now
@@ -283,7 +305,7 @@ struct SubscriberSessionsView: View {
         
         // Find the specific exercise across ANY of those sessions
         for session in dateSessions {
-            if let exercise = session.exercises?.first(where: { $0.name == machine }) {
+            if let exercise = session.exercises?.first(where: { exerciseMatches($0.name, machine) }) {
                 return (session, exercise)
             }
         }
@@ -293,6 +315,23 @@ struct SubscriberSessionsView: View {
     
     private func normalizeDate(_ date: Date) -> Date {
         Calendar.current.startOfDay(for: date)
+    }
+    
+    private func exerciseMatches(_ lhs: String, _ rhs: String) -> Bool {
+        normalizedExerciseName(lhs) == normalizedExerciseName(rhs)
+    }
+    
+    private func normalizedExerciseName(_ name: String) -> String {
+        let lowered = name.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        
+        switch lowered {
+        case "elptical":
+            return "elliptical"
+        case "addiction":
+            return "adduction"
+        default:
+            return lowered
+        }
     }
     
     private var dateFormatter: DateFormatter {
@@ -354,4 +393,3 @@ struct SessionCell: View {
         return String(format: "%02d:%02d:%02d", minutes, seconds, ms)
     }
 }
-

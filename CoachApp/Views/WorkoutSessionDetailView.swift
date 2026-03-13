@@ -10,6 +10,8 @@ import SwiftUI
 struct WorkoutSessionDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
+    @AppStorage("pendingSubscriberSelection") private var pendingSubscriberID: String = ""
+    @AppStorage("requestedRootTab") private var requestedRootTab: Int = -1
     
     // Config
     let config: SessionEditorConfig
@@ -122,6 +124,14 @@ struct WorkoutSessionDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") { dismiss() }
+                }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button {
+                        openNewSessionInMainSessionsView()
+                    } label: {
+                        Label("New Session", systemImage: "plus")
+                    }
+                    .disabled(subscriber.id == nil)
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Save") { saveSession() }
@@ -747,6 +757,21 @@ struct WorkoutSessionDetailView: View {
                     self.showErrorAlert = true
                 }
             }
+        }
+    }
+    
+    private func openNewSessionInMainSessionsView() {
+        guard let subscriberID = subscriber.id else { return }
+        
+        pendingSubscriberID = subscriberID
+        requestedRootTab = 3
+        
+        NotificationCenter.default.post(name: NSNotification.Name("SessionsTabSelected"), object: nil)
+        
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            dismiss()
         }
     }
     
